@@ -11,35 +11,36 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import { Brain, Calendar, Home, Inbox, Layers, Search, Settings, UserCircle, Wallet } from "lucide-react"
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { TrendingUp } from 'lucide-react'
 
 const items = [
     {
-        title: "Home",
+        title: "Workspace",
         url: "#",
-        icon: Home,
+        icon: Layers,
     },
     {
-        title: "Inbox",
+        title: "AI Tools",
         url: "#",
         icon: Inbox,
     },
     {
-        title: "Calendar",
+        title: "My History",
         url: "#",
         icon: Calendar,
     },
     {
-        title: "Search",
+        title: "Billing",
         url: "#",
-        icon: Search,
+        icon: Wallet,
     },
     {
-        title: "Settings",
+        title: "Profile",
         url: "#",
-        icon: Settings,
+        icon: UserCircle,
     },
 ]
 
@@ -48,10 +49,11 @@ export function AppSidebar() {
     return (
         <Sidebar>
             <SidebarHeader>
-                <div className='p-4'>
-                    <Image src={'./logo.svg'} alt='logo' width={100} height={100}
-                        className='w-full h-full' />
-                    <h2 className='text-sm text-gray-400 text-center'>Build Awesome</h2>
+                <div className="flex items-center gap-4 mt-4 border border-blue-500 rounded-xl py-3 pl-6 shadow-sm cursor-pointer">
+                    <div className="w-16 h-14 bg-blue-600 rounded-xl flex items-center justify-center">
+                    <Brain className="w-7 h-7 text-white" />
+                    </div>
+                    <span className="text-2xl text-gray-900 font-serif text-darkblue">AI Career Guide</span>
                 </div>
             </SidebarHeader>
             <SidebarContent>
