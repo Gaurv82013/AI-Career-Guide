@@ -19,7 +19,7 @@ import { TrendingUp } from 'lucide-react'
 const items = [
     {
         title: "Workspace",
-        url: "#",
+        url: "/dashboard",
         icon: Layers,
     },
     {
@@ -34,12 +34,12 @@ const items = [
     },
     {
         title: "Billing",
-        url: "#",
+        url: "/billing",
         icon: Wallet,
     },
     {
         title: "Profile",
-        url: "#",
+        url: "/profile",
         icon: UserCircle,
     },
 ]
